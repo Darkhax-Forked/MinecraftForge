@@ -60,7 +60,8 @@ public class ItemAttributeModifierEvent extends Event
     /**
      * Gets a modifiable map instance, creating it if the current map is currently unmodifiable
      */
-    private Multimap<Attribute, AttributeModifier> getModifiableMap() {
+    private Multimap<Attribute, AttributeModifier> getModifiableMap()
+    {
         if (modifiableModifiers == null)
         {
             modifiableModifiers = HashMultimap.create(unmodifiableModifiers);
